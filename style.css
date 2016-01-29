@@ -1,8 +1,13 @@
+h1{
+	margin: 20px auto;
+	text-align: center;
+}
+
 #container{
 	position: relative;
 	margin: 5%;
-	width: 95%;
-	height: 700px;
+	width: 90%;
+	height: 500px;
 }
 
 .land{
