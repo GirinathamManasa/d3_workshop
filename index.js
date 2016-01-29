@@ -9,11 +9,13 @@ var map = new Datamap({
 });
 
 //get the data
-var data = d3.csv('pres_polls.csv', function(d){
+d3.csv('https://github.com/milesjos/d3_workshop/blob/master/pres_polls.csv', function(d){
 	return {
 		state: d.State,
 		ev: +d.ElectoralVotes,	//+ makes the variable an integer rather than a string
 		dem: +d.Dem,
 		rep: +d.Rep
+	}, function(d) {
+		console.log(d[0]);
 	}
 });
