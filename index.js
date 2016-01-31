@@ -14,9 +14,6 @@ d3.csv('http://joshmiles.me/d3_workshop/pres_polls.csv', function(d){
 		element: document.getElementById('container'), //get our container for our map
 		responsive: true,
 		geographyConfig: {
-			popupTemplate: function(geo, d) {
-	          return '<div class="hoverinfo"><div>'+geo.properties.name+'</div><div>'+'p'+'</div></div>';
-	        },
 			highlightOnHover: false //get rid of highlight on hover
 		}
 	});
