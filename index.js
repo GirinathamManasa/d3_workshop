@@ -29,15 +29,15 @@ d3.csv('http://joshmiles.me/d3_workshop/pres_polls.csv', function(d){
 		var st = d3.select('.' + data[i].state);
 		//if the percent for the democratic candidate was higher than the republican candidate ...
 		if (data[i].dem >= data[i].rep) {
-			//... and the number of electoral votes was above 20...
-			if (data[i].ev >= 15) {
+			//... and the percent democrat was over 60%
+			if (data[i].dem >= 60) {
 				//... fill the state with heavyDemocrat
 				st.style('fill', heavyDemocrat);
 			} else {
 				st.style('fill', lightDemocrat);
 			}
 		} else{
-			if (data[i].ev >= 15) {
+			if (data[i].rep >= 60) {
 				st.style('fill', heavyRepublican);
 			} else {
 				st.style('fill', republican);
