@@ -27,6 +27,14 @@ d3.csv('http://joshmiles.me/d3_workshop/pres_polls.csv', function(d){
 			lightDemocrat = '#293C87';
 		//st is for state
 		var st = d3.select('.' + data[i].state);
+		//st on hover add the data for that state
+		// st.on('mouseover', function() {
+		// 	console.log(data)
+		// 	classString = d3.select(this).attr('class')
+		// 	d3.select('#data')
+		// 		.html('<p class="stateData">' + classString.slice(-2) + '</p>'
+		// 			+ '')
+		// });
 		//if the percent for the democratic candidate was higher than the republican candidate ...
 		if (data[i].dem >= data[i].rep) {
 			//... and the percent democrat was over 60%
@@ -44,6 +52,7 @@ d3.csv('http://joshmiles.me/d3_workshop/pres_polls.csv', function(d){
 			}
 		}
 	}
+	//make it responsive
 	d3.select(window).on('resize', function() {
         map.resize();
     });
