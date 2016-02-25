@@ -5,13 +5,12 @@
 
 ## See the project [here](http://joshmiles.me/d3_workshop)
 
+## Watch the stream [here](https://www.youtube.com/watch?v=NIpgwkCrVJI)
 
 
-
-# Further Reading
+# Made with :heart:️ and the sources below
 
 - http://d3js.org/
 - https://github.com/mbostock/d3/wiki/Tutorials
 - https://github.com/mbostock/d3/wiki/Gallery
-- [Steven Kneiser's bash workshop](https://github.com/theshteves/bash-workshop) :wink:
 
